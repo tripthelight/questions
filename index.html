@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>질문 리스트</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -13,28 +14,97 @@
         <h1>질문리스트</h1>
 
         <nav>
-          <button class="active">COMMON</button>
-          <button>PC</button>
+          <button class="active">PC</button>
           <button>TABLET</button>
           <button>MOBILE</button>
         </nav>
       </header>
 
       <main>
-        <article class="common active">
-          <h2>COMMON</h2>
-          <section>질문 1</section>
-          <section>질문 2</section>
-          <section>질문 3</section>
-        </article>
-        <article class="pc">
+        <article class="pc active">
           <h2>PC</h2>
+          <section>
+            <h3>질문 1</h3>
+            <div class="ques">
+              <div class="img-box">
+                <img src="/images/pc/s1/s1-1.JPG" alt="질문 1" />
+              </div>
+              <ul class="txt-list">
+                <li><em class="num">1.</em>FIGMA에 <em class="blue">Hover</em>와 <em class="blue">Active</em>가 없어, <em class="red">color code</em> 부탁드립니다.</li>
+              </ul>
+            </div>
+          </section>
         </article>
         <article class="tablet">
           <h2>TABLET</h2>
+          <section>
+            <h3>질문 1</h3>
+            <div class="ques type-list">
+              <div class="list">
+                <div class="img-box">
+                  <img src="/images/tablet/s1/s1-1.JPG" alt="질문 1-1" />
+                </div>
+                <ul class="txt-list">
+                  <li><em class="num">1.</em>section01의 하단 패딩값이 0인데, section01의 상하단 패딩값이 80px 이라는 뜻을 잘 모르겠습니다.</li>
+                  <li><em class="num">2.</em><em class="blue">하단이 0</em> 이고 <em class="red">상단이 80px</em>이라는 뜻인가요?</li>
+                </ul>
+              </div>
+              <div class="list">
+                <div class="img-box">
+                  <img src="/images/tablet/s1/s1-2.JPG" alt="질문 1-2" />
+                </div>
+                <ul class="txt-list">
+                  <li><em class="num">1.</em>section03 하단 패딩값이 0인데, section01의 상하단 패딩값이 80px 이라는 뜻을 잘 모르겠습니다.</li>
+                  <li><em class="num">2.</em><em class="blue">하단이 0</em> 이고 <em class="red">상단이 80px</em>이라는 뜻인가요?</li>
+                </ul>
+              </div>
+              <div class="list">
+                <div class="img-box">
+                  <img src="/images/tablet/s1/s1-3.JPG" alt="질문 1-3" />
+                </div>
+                <ul class="txt-list">
+                  <li><em class="num">1.</em>section04 하단 패딩값이 0인데, section01의 상하단 패딩값이 80px 이라는 뜻을 잘 모르겠습니다.</li>
+                  <li><em class="num">2.</em><em class="blue">하단이 0</em> 이고 <em class="red">상단이 80px</em>이라는 뜻인가요?</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>질문 2</h3>
+            <div class="ques">
+              <div class="img-box">
+                <img src="/images/tablet/s2/s2-1.JPG" alt="질문 2" />
+              </div>
+              <ul class="txt-list">
+                <li><em class="num">1.</em>FIGMA에는 <em class="blue">같은 년도</em>일 때, 여백 40px, <em class="red">다른 년도</em> 일 때 여백 56px 로 나와있습니다.</li>
+                <li><em class="num">2.</em>모든 여백이 <em class="red">40px</em> 인게 맞나요?</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <h3>질문 3</h3>
+            <div class="ques">
+              <div class="img-box">
+                <img src="/images/tablet/s3/s3-1.JPG" alt="질문 3" />
+              </div>
+              <ul class="txt-list">
+                <li><em class="num">1.</em>FIGMA에는 <em class="blue">같은 년도</em>일 때, 여백 40px, <em class="red">다른 년도</em> 일 때 여백 56px 로 나와있습니다.</li>
+                <li><em class="num">2.</em>모든 여백이 <em class="red">40px</em> 인게 맞나요?</li>
+              </ul>
+            </div>
+          </section>
         </article>
         <article class="mobile">
           <h2>MOBILE</h2>
+          <section>
+            <h3>질문 1</h3>
+          </section>
+          <section>
+            <h3>질문 2</h3>
+          </section>
+          <section>
+            <h3>질문 3</h3>
+          </section>
         </article>
       </main>
 
@@ -47,6 +117,8 @@
         </button>
       </aside>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

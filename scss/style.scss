@@ -27,6 +27,10 @@ ul,
 li {
   list-style-type: none;
 }
+em,
+i {
+  font-style: normal;
+}
 button {
   background-color: transparent;
   border: 0 none;
@@ -100,7 +104,7 @@ main {
       top: 0;
       width: 100%;
       background-color: #fff;
-      padding: 20px 16px;
+      padding: 20px 100px 20px 16px;
       box-sizing: border-box;
       z-index: 98;
     }
@@ -108,11 +112,99 @@ main {
       position: relative;
       padding: 20px 100px 20px 16px;
       box-sizing: border-box;
-      box-sizing: border-box;
       z-index: 97;
       width: 100%;
       height: calc(100% - 72px);
-      overflow-y: auto;
+      overflow: hidden;
+      .ques {
+        width: 100%;
+        height: calc(100% - 30px);
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        .img-box {
+          width: 100%;
+          border-radius: 8px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .txt-list {
+          display: flex;
+          align-items: start;
+          justify-content: center;
+          flex-direction: column;
+          margin: 10px 0 0 0;
+          li {
+            position: relative;
+            font-size: 14px;
+            line-height: 14px;
+            color: #000;
+            text-align: left;
+            padding-left: 20px;
+            box-sizing: border-box;
+            font-size: 20px;
+            line-height: 24px;
+            em {
+              font-weight: 700;
+              &.blue {
+                color: #0000ff;
+              }
+              &.red {
+                color: #ff0000;
+              }
+              &.num {
+                font-weight: 400;
+                position: absolute;
+                left: 0;
+                top: 0;
+              }
+            }
+            & + li {
+              margin-top: 10px;
+            }
+          }
+        }
+        &.type-list {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: column;
+          .list {
+            flex: 1 1 content;
+            width: 100%;
+            height: calc((100% - 40px) / 3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .img-box,
+            .txt-list {
+              flex: 1 1 50%;
+              box-sizing: border-box;
+              height: 100%;
+            }
+            .img-box {
+              padding-right: 10px;
+              overflow: hidden;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .txt-list {
+              padding-left: 10px;
+              margin-top: 0;
+            }
+            & + .list {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
     }
     &.active {
       display: block;
@@ -135,6 +227,7 @@ aside {
   flex-direction: column;
   padding: 20px 0;
   box-sizing: border-box;
+  background-color: #fff;
   z-index: 99;
   button {
     width: 60px;
